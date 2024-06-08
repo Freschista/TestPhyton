@@ -1,0 +1,21 @@
+title: My Jekyll Site
+description: A simple Jekyll site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://yourdomain.com" # the base hostname & protocol for your site
+theme: jekyll-theme-primer
+
+# Build settings
+markdown: CommonMarkGhPages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+paginate: 5
