@@ -14,10 +14,11 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: '2.7'
       - name: Install dependencies
         run: |
-          gem install bundler
+          gem install bundler -v 2.4.22
+          bundle config set path 'vendor/bundle'
           bundle install
       - name: Build site
         run: bundle exec jekyll build
